@@ -1,0 +1,121 @@
+/*header styling*/
+header{
+    text-align: center;
+    margin: 50px;
+}
+header > span > a{
+    text-decoration: none;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 50px;
+}
+header > span > .red{
+    color: red;
+}
+header > span > .green{
+    color: green;
+}
+/*home page styling*/
+body{
+    margin: 0px;
+}
+.masthead{
+    background-image: url("../img/masthead.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.masthead > div{
+    background-color: red;
+    color: white;
+    border: solid 2px red;
+    border-radius: 6px;
+    padding: 20px 50px;
+}
+.masthead > div > a{
+    text-decoration: none;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 25px;
+    color: white;
+}
+/*order form styling*/
+.orderForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.orderForm > main > section{
+    font-family: 'Roboto', sans-serif;
+}
+.orderForm > main > section > h2{
+    background-color: green;
+    color: white;
+    padding: 10px;
+}
+.orderForm > main > section{
+    background-color: gainsboro;
+}
+.orderForm > main > section > form{
+    padding: 5px;
+}
+.crustSection{
+    display: grid;
+}
+.cheeseSection{
+    display: grid;
+}
+.sauceSection{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+        "heading heading"
+        "form1 form2";
+}
+.sauceSection > h2{
+    grid-area: heading;
+}
+.sauceSection > .form1{
+    grid-area: form1;
+}
+.sauceSection > .form2{
+    grid-area: form2;
+}
+.toppingsSection{
+    display: grid;
+}
+.deliveryInfo{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+        "heading heading heading"
+        "pInfo aInfo cInfo";
+}
+.deliveryInfo > h2{
+    grid-area: heading;
+}
+.deliveryInfo > .pInfo{
+    grid-area: pInfo;
+}
+.deliveryInfo > .aInfo{
+    grid-area: aInfo;
+}
+.deliveryInfo > .cInfo{
+    grid-area: cInfo;
+}
+.orderBtn{
+    text-align: center;
+    background-color: red;
+    color: white;
+    border: solid 2px red;
+    border-radius: 6px;
+    padding: 20px 50px;
+    margin: 50px;
+}
+.orderBtn > a{
+    text-decoration: none;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 40px;
+    color: white;
+}

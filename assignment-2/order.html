@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Order page of Austino's pizzaria">
+        <meta name="robots" content="noindex, nofollow">
+        <title>Austino's Pizzaria | Order</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body class="orderForm">
+        <header>
+            <span><a href="index.html" class="red">Austino's</a></span>
+            <span><a href="index.html" class="green">Pizzaria</a></span>
+        </header>
+        <main>
+            <section class="sizeSection">
+                <h2>Size</h2>
+                <form>
+                    <input type="radio" id="small" name="pizza_size" value="Small">
+                    <label for="small">Small</label>
+                    <input type="radio" id="medium" name="pizza_size" value="Medium">
+                    <label for="medium">Medium</label>
+                    <input type="radio" id="large" name="pizza_size" value="Large">
+                    <label for="large">Large</label>
+                </form>
+            </section>
+            <section class="crustSection">
+                <h2>Crust</h2>
+                <form>
+                    <input type="radio" id="thin" name="crust_size" value="Thin">
+                    <label for="thin">Thin</label>
+                    <input type="radio" id="normal" name="crust_size" value="Normal">
+                    <label for="normal">Normal</label>
+                    <input type="radio" id="thick" name="crust_size" value="Thick">
+                    <label for="thick">Thick</label>
+                </form>
+            </section>
+            <section class="cheeseSection">
+                <h2>Cheese</h2>
+                <form>
+                    <select name="cheese" id="cheese">
+                        <option value="light">Light</option>
+                        <option value="normal" selected>Normal</option>
+                        <option value="heavy">Heavy</option>
+                    </select>
+                </form>
+            </section>
+            <section class="sauceSection">
+                <h2>Sauce</h2>
+                <form class="form1">
+                    <input type="radio" id="pizza" name="sauce_type" value="Pizza">
+                    <label for="pizza">Pizza Sauce</label>
+                    <input type="radio" id="bbq" name="sauce_type" value="BBQ">
+                    <label for="bbq">BBQ</label>
+                    <input type="radio" id="alfredo" name="sauce_type" value="Alfredo">
+                    <label for="alfredo">Alfredo</label>
+                </form>
+                <form class="form2">
+                    <label for="sauce_amount">Sauce Amount</label>
+                    <select name="sauce_amount" id="sauce_amount">
+                        <option value="light">Light</option>
+                        <option value="normal" selected>Normal</option>
+                        <option value="heavy">Heavy</option>
+                    </select>
+                </form>
+            </section>
+            <section class="toppingsSection">
+                <h2>Toppings</h2>
+                <form>
+                    <input type="checkbox" name="topping" id="pepperoni" value="Pepperoni">
+                    <label for="pepperoni">Pepperoni</label>
+                    <input type="checkbox" name="topping" id="sausage" value="Sausage">
+                    <label for="sausage">Sausage</label>
+                    <input type="checkbox" name="topping" id="ham" value="Ham">
+                    <label for="ham">Ham</label>
+                    <input type="checkbox" name="topping" id="bacon" value="Bacon">
+                    <label for="bacon">Bacon</label>
+                    <input type="checkbox" name="topping" id="chicken" value="Chicken">
+                    <label for="chicken">Chicken</label>
+                    <input type="checkbox" name="topping" id="beef" value="Beef">
+                    <label for="beef">Beef</label>
+                    <input type="checkbox" name="topping" id="gPepper" value="Green Pepper">
+                    <label for="gPepper">Green Pepper</label>
+                    <input type="checkbox" name="topping" id="mushroom" value="Mushroom">
+                    <label for="mushroom">Mushroom</label>
+                    <input type="checkbox" name="topping" id="pineapple" value="Pineapple">
+                    <label for="pineapple">Pineapple</label>
+                    <input type="checkbox" name="topping" id="onion" value="Onion">
+                    <label for="onion">Onion</label>
+                    <input type="checkbox" name="topping" id="tomatoes" value="Tomatoes">
+                    <label for="tomatoes">Tomatoes</label>
+                    <input type="checkbox" name="topping" id="jPepper" value="Jalapeno Peppers">
+                    <label for="jPepper">Jalapeno Peppers</label>
+                </form>
+            </section>
+            <section class="deliveryInfo">
+                <h2>Delivery Info</h2>
+                <form class="pInfo">
+                    <!--Is getting delivery? checkbox-->
+                    <input type="checkbox" name="delivery" id="delivery" value="Delivery">
+                    <label for="delivery">Delivery?</label><br>
+
+                    <!--personal info entry-->
+                    <label for="fName">First Name</label><br>
+                    <input type="text" name="fName" id="fName"><br>
+                    <label for="lName">Last Name</label><br>
+                    <input type="text" name="lName" id="lName"><br>
+                </form>
+                <form class="aInfo">
+                    <!--address info entry-->
+                    <label for="address">Address</label><br>
+                    <input type="text" name="address" id="address"><br>
+                    <label for="apt">Apt#</label><br>
+                    <input type="text" name="apt" id="apt"><br>
+                    <label for="city">City</label><br>
+                    <input type="text" name="city" id="city"><br>
+                    <label for="province">Province</label><br>
+                    <input type="text" name="province" id="province"><br>
+                    <label for="postal">Postal Code</label><br>
+                    <input type="text" name="postal" id="postal"><br>
+                </form>
+                <form class="cInfo">
+                    <!--contact info entry-->
+                    <label for="phone">Phone #</label><br>
+                    <input type="tel" name="phone" id="phone"><br>
+                    <label for="email">Email Address</label><br>
+                    <input type="email" name="email" id="email"><br>
+                </form>
+            </section>
+            <div class="orderBtn"><a href="index.html">Place Order</a></div>
+        </main>
+    </body>
+</html>
